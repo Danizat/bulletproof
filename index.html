@@ -1,24 +1,129 @@
 <!doctype html>
 <html>
     <head>
-        <title>Hello World</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Bulletproof</title>
+         <meta charset="utf-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        
     </head>
-    <style type="text/css">
-	body {
-            margin: 5px;
-            
-        }
-	h1 {
-	    font-size: 15px;
-	    text-align: center;
-        }
-    </style>
+    
     <body>
-        <h1>Hello new page</h1>
-        <a href = ""   target="_blank">extensions</a>
+      
+        <header id ="header">
+            <div class="container">
+                <menu class="menu">
+                    <li class="menu-items"><a href="#about">О программе</a></li>
+                    <li class="menu-items"><a href="#howItWorks">Функционал</a></li>
+                    <li class="menu-items"><a href="#goals">Цели программы </a></li>
+                    <li class="menu-items"><a href="#contacts">Контакты</a></li>
+                </menu>
+            </div>
+        </header>
 
 
+        <section id="about">
+            <div class="container">
+                <div class="alignment">
+                    <div class="textBox">
+                    <h1 data-aos="fade-up" data-aos-duration="2000"
+     >Что за расширение?</h1>
+                    <img src="./images/navremya.svg" >
+                    <p data-aos="fade-up"
+     >Bulletproof -расшиерние для chrome браузера, заботящийся о вашем здоровье  и уведомляющий вас о том,что пора к перерыву в работе. Так же есть набор упражнений которые вы должны выполнить за перерыв.Плюс он помогает снять стресс и предложит вам отличную музыку и медитацию</p>
+                </div>
+                <div class="gifBox">
+                     <img src = "https://cdn.dribbble.com/users/1056629/screenshots/6553608/dribbble_fireart_7.gif">
+                </div>
+                </div>  
+            </div>
+        </section>
+        <section id="howItWorks">
+            <div class="container">
+                <div class="alignment">
+                    <div class="gifBox">
+                        <img src = "https://cdn.dribbble.com/users/1056629/screenshots/6459209/dribbble_fireart_4.gif">
+                    </div>
+                    <div class="textBox">
+                    <h1 data-aos="fade-up" data-aos-duration="2000"
+     >Как это работает?</h1>
+                    <img src="./images/navremya.svg" >
+                    <p data-aos="fade-up">Как же работает? Самое главное преимушество нашего расширения -  это ненавязчивость:) Вы можете настроить расширение уведомлять вас каждые 1, 2 или 3 часа. За промежутки времени раширение покажет вам расслабляющие упражнения после рабочего времени. Берегите свое здоровье.Не забывайте , вам нужен отдых!</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section id="goals">
+            <div class="container">
+                <div class="alignment">
+                    <div class="textBox">
+                    <h1 data-aos="fade-up" data-aos-duration="2000"
+     >Цели  расширения</h1>
+                    <img src="./images/navremya.svg" >
+                    <p data-aos="fade-up" 
+     >Цель расширения помочь людям не забывть об отдыхе и таким образом улучшать состояние их здоровья. Зачастую люди которые ведут сидячий образ жизни двигаются очень мало. Набор упражнений не отнимет у вас так уж много времени, но зато вы получите столько позитива.
+Иии наш совет... Если вы уж установили расширение, то не игнорируйте уведомления. Ведь ваше цель заботится о своем здоровье!</p>
+                </div>
+                <div class="exercises">
+                    <div class="exercises-item">
+                        <div class="exercises-item-img"><img src = "https://cdn.dribbble.com/users/1056629/screenshots/6464387/dribbble_fireart_5.gif"></div>
+                        <button  class="main-button">Для глаз</button>
+                        <img src="./images/navremya.svg" >
 
+                    </div>
+                    <div class="exercises-item">
+                        <div class="exercises-item-img"><img src = "https://cdn.dribbble.com/users/1056629/screenshots/6464387/dribbble_fireart_5.gif"></div>
+                        <button class="main-button">Для тела</button>
+                        <img src="./images/navremya.svg" >
+
+                    </div>
+                    <div class="exercises-item">
+                        <div class="exercises-item-img"><img src = "https://cdn.dribbble.com/users/1056629/screenshots/6464387/dribbble_fireart_5.gif"></div>
+                        <button class="main-button">Медитация</button>
+                        <img src="./images/navremya.svg" >
+
+                    </div>
+
+                </div>
+                </div>  
+            </div>          
+        </section>
+        <section id="contacts">
+            <div class="container">
+                <div class="alignment">
+                    <div class="textBox">
+                    <h1 data-aos="fade-up" data-aos-duration="2000"
+     >Наши контакты</h1>
+                    <img src="./images/navremya.svg" >
+                    <p data-aos="fade-up"
+     >Были очень рады с вами познакомиться! Недеюсь мы смогли быть полнезными для вас.Следите за вашим здоровьем и нашими советами.Думаем, вам понравиться это раширение. И Если у вас есть советы или вопросы будем благодарны вас послушать и улучшать в дальнейшем. Пишите нам ваши рекомендации.....</p>
+     <br>
+                <p>Все права защищены.</p>
+                <p>Бишкек 2019</p>
+                </div>
+                <div class="contactsInfo" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="contactsInfo-items">
+                        <div class="contactsInfo-icons"><img src = "https://cdn.dribbble.com/users/1056629/screenshots/6553608/dribbble_fireart_7.gif"></div>
+                        <p>+996700963250</p>
+                    </div>
+                    <div class="contactsInfo-items">
+                        <div class="contactsInfo-icons"><img src = "https://cdn.dribbble.com/users/1056629/screenshots/6459209/dribbble_fireart_4.gif"></div>
+                        <p>bulletproof@gmail.com</p>
+                    </div>
+                    <div class="contactsInfo-items">
+                        <div class="contactsInfo-icons"><img src = "https://cdn.dribbble.com/users/1056629/screenshots/6464387/dribbble_fireart_5.gif"></div>
+                        <p>@bulletproof</p>
+                    </div>
+                     
+                </div>
+                </div>  
+            </div>
+        </section>
+          
+
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="./index.js"></script>
     </body>
 </html>

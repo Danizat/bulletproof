@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Danizat/bulletproof#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.3.1",
     "flexslider": "^2.7.2",
     "jquery": "^3.4.1"

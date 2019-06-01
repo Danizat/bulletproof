@@ -2,17 +2,26 @@
 <html>
 	<head>
 		<title>Hello World</title>
+		 <meta charset="utf-8">
+		 <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap&subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./styles.css">
 		
 	</head>
 	<body>
-		<h1>Hello World!</h1>
-		
-		<button id="send">Send</button>
+		<div class="popup">
+			<div class="logo">here would be our logo</div>
+			<p id="description">Bulletproof -расшиерние для chrome браузера, заботящийся о вашем здоровье  и уведомляющий вас о ...</p>
 
-		<a href = ""   target="_blank">opensite</a>
-
-
-
+		<a href = "./index.html"   target="_blank"><button id = "toSite" class="main-button" >Перейти к сайту</button></a>
+		 <img  style="display: block;" src="./images/tojenavremya.svg" >
+		<a style="font-size: 16px" href="#" id="send">Send</a>
+		<p id="notificate">Уведомлять каждые:</p>
+		<div class="set-hours">
+			<div class="set-hours-items" id="hour-1">1час</div>
+			<div class="set-hours-items" id="hour-2">2часа</div>
+			<div class="set-hours-items" id="hour-3">3часа</div>
+		</div>
+		</div>
 
 		<script src="./popup.js"></script>
 		<script src="./node_modules/jquery/dist/jquery.min.js"></script>

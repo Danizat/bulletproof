@@ -2,19 +2,24 @@
 .modalContainer {
 	
 }
-.fakeBox {
+.modalBox {
 	margin:  auto;
 	margin-top:3em;
 	width:80%;
 	height: 60%;
 	position: relative;
-	background: blue;
 }
-.fakeBox li> div{
-	height: 300px;
-	width: 600px;
+.modalBox li > div{
+	height: 400px;
+	width: 100%;
 	border: 2px solid #fff;
 	font-size: 25px;
 	text-align: center;
-
+}
+.modalBox li > div > img{
+	height: 100%;
+	width: 100%;
+}
+.dNone {
+	display: none;
 }
