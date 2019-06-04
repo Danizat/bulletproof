@@ -24,6 +24,21 @@ setTimeout(() => {  chrome.notifications.create(options,callback)
 
       }},5000);
 
-   
+
+document.getElementById("check").addEventListener("click",messageSender);
+
+function messageSender(e) {
+e.preventDefault();
+
+chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+  chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
+    console.log(response.farewell);
+  });
+});
+
+
+}
+
+
 
 })	
