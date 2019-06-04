@@ -1,11 +1,9 @@
 window.addEventListener("load", () => {
-    let a = document.querySelector("#send");
-    a.addEventListener("click", (e) => {
-        return chrome.storage.local.set({
+    chrome.storage.local.set({
             openCommand: "openModal"
         }, function() {
             console.log('Value is set');
-        });
+        
     });
 
 
