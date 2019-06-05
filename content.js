@@ -105,10 +105,12 @@ window.addEventListener("load", () => {
                                                                 return   `<li>${b}</li>`
                                                                 })}
                                                          </ul>
-                                                    </div>       
+                                                    </div>
+                                                       
                                                     </li>`    
                                         })
                                     }
+
             
                                     </ul>
                                 </div>
@@ -128,7 +130,7 @@ window.addEventListener("load", () => {
                 $(".modalContainer").remove();
                 $(clearStorage());
             }) ;
-            
+        
            
         });
 
