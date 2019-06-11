@@ -26,5 +26,8 @@
     "bootstrap": "^4.3.1",
     "flexslider": "^2.7.2",
     "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.0"
   }
 }

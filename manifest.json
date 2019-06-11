@@ -1,27 +1,37 @@
 {
-"manifest_version": 2,
-"name": "BULLETPROOF",
-"version": "0.0.1",
-"description": "Extention for browser chrome that cares about your health and makes you to do simple excercises for body and eyes, also warns you to srink water or take a break",
- "permissions": [
-    "storage",
-    "cookies",
-    "notifications",
-    "https://ajax.googleapis.com/*"
+    "manifest_version": 2,
+    "name": "BULLETPROOF",
+    "version": "0.0.1",
+    "description": "Extention for browser chrome that cares about your health and makes you to do simple excercises for body and eyes, also warns you to srink water or take a break",
+    "permissions": [
+        "storage",
+        "cookies",
+        "notifications",
+        "https://ajax.googleapis.com/*",
+        "tabs"
     ],
-     "content_scripts": [ 
-   {
-     "matches":["http://*/*", "https://*/*"],
-     "js": ["node_modules/jquery/dist/jquery.min.js","node_modules/flexslider/jquery.flexslider-min.js","node_modules/bootstrap/dist/js/bootstrap.js","exercises.js", "content.js"],
-     "css": ["node_modules/bootstrap/dist/css/bootstrap.min.css","node_modules/flexslider/flexslider.css","content.css"]
-   }
- ],
-    "background": { "scripts": ["background.js","popup.js","index.js"] },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "node_modules/flexslider/jquery.flexslider-min.js",
+                "node_modules/bootstrap/dist/js/bootstrap.js",
+                "exercises.js",
+                "content.js"
+            ],
+            "css": [
+                "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                "node_modules/flexslider/flexslider.css",
+                "content.css"
+            ]
+        }
+    ],
+    "background": { "scripts": ["popup.js", "index.js"] },
     "web_accessible_resources": ["icon_small.png"],
     "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
     "browser_action": {
         "default_title": "Open extention",
-        // "default_icon": "icon_small.png",
         "default_popup": "popup.html"
     }
 }
