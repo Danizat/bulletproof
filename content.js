@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
 
-            function checkStorage() {
+            function modalCreator() {
                 chrome.storage.local.get(["openCommand"], function(result) {
                             if (result.openCommand === "openModal") {
                                 let modalContainer = document.createElement("modalContainer");
@@ -71,15 +71,14 @@ window.addEventListener("load", () => {
     }
 
 
-function tempFunc() {
+function checkStorage() {
      
      chrome.storage.local.get(["startTime","frequence"],function(result) {
-         alert("frequence:" + result.frequence);
-        alert("startTime:" + result.startTime);
-        setInterval(function() {
+        let check =  setInterval(function() {
         let endTime = new Date().getMinutes();
         if(endTime - result.startTime === +result.frequence) {
-            return checkStorage();
+            clearInterval(check)
+            return modalCreator();
         }   
     },6000)
 
@@ -102,7 +101,7 @@ function tempFunc() {
                 : "from the extension"
         );
         if (request.greeting == "hello") sendResponse({ farewell: "goodbye" });
-        tempFunc();
+        checkStorage();
 
 
 
