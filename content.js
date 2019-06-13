@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
             function modalCreator() {
                 chrome.storage.local.get(["openCommand"], function(result) {
                             if (result.openCommand === "openModal") {
+                                
                                 let modalContainer = document.createElement("modalContainer");
                                 modalContainer.style.width = "100%";
                                 modalContainer.style.height = "100%";

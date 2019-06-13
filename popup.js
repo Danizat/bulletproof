@@ -5,8 +5,6 @@ window.addEventListener("load", () => {
         function() {}
     );
 
-   
-
 
 
     document.getElementById("hour-1").addEventListener("click",  ()  => setFrequence(1));
@@ -38,7 +36,7 @@ function setFrequence(e) {
 
         chrome.tabs.query({
             active: true,
-            currentWindow: true
+            // lastFocusedWindow: true
         }, function(tabs) {
             chrome.tabs.sendMessage(tabs[0].id, {
                 greeting: "hello"

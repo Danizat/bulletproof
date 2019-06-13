@@ -43,7 +43,8 @@
     "cookies",
     "notifications",
     "https://ajax.googleapis.com/*",
-    "tabs"
+    "tabs",
+    "activeTab"
   ],
   "version": "0.0.1",
   "web_accessible_resources": [
