@@ -5,20 +5,7 @@ window.addEventListener("load", () => {
         function() {}
     );
 
-    let options = {
-        type: "basic",
-        title: "Пора к перерыву!",
-        message: "Пришло время отдохнуть и сделать  упражнения",
-        iconUrl: "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fapk4free.net%2Fwp-content%2Fuploads%2F2017%2F03%2FNotifications.png&f=1"
-    };
-
-    chrome.notifications.create(options, callback);
-
-    function callback() {
-        console.log("Notifications!");
-    }
-
-    document.getElementById("check").addEventListener("click", messageSender);
+   
 
 
 
@@ -57,8 +44,19 @@ function setFrequence(e) {
                 greeting: "hello"
             }, function(
                 response
-            ) {
-                console.log(response.farewell);
+        ) {
+            let options = {
+                    type: "basic",
+                    title: "Частота установлена!",
+                    message: "Упражнения появятся с установленной частотой.",
+                    iconUrl: "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fapk4free.net%2Fwp-content%2Fuploads%2F2017%2F03%2FNotifications.png&f=1"
+                };
+
+                chrome.notifications.create(options, callback);
+
+                function callback() {
+                    console.log("Notifications!");
+                }
             });
         });
     }
